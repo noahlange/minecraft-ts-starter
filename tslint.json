@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "tslint:latest",
+    "tslint-config-prettier"
+  ],
+  "defaultSeverity": "warning",
+  "rules": {
+    "no-implicit-dependencies": false,
+    "no-submodule-imports": false
+  }
+}
