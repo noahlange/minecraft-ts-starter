@@ -5,11 +5,13 @@
   "scripts": {
     "start": "webpack --mode none --watch",
     "build": "webpack --mode production",
-    "pretty": "prettier 'src/**/*.ts'"
+    "pretty": "prettier 'src/**/*.ts'",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'"
   },
   "dependencies": {
     "minecraft-scripting-types-client": "^0.1.0",
-    "minecraft-scripting-types-server": "^0.1.0"
+    "minecraft-scripting-types-server": "^0.1.0",
+    "tsrock": "0.2.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.0",
@@ -26,5 +28,31 @@
     "typescript": "^3.2.2",
     "webpack": "^4.27.1",
     "webpack-cli": "^3.1.2"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/env",
+        {
+          "targets": {
+            "edge": 44
+          }
+        }
+      ],
+      "@babel/typescript"
+    ],
+    "plugins": [
+      [
+        "@babel/proposal-decorators",
+        {
+          "legacy": true
+        }
+      ],
+      "@babel/proposal-class-properties",
+      "@babel/proposal-object-rest-spread"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true
   }
 }

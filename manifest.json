@@ -1,30 +1,18 @@
 {
   "format_version": 1,
   "header": {
-    "description": "01 Getting Started",
-    "name": "01 Getting Started",
+    "description": "My Custom Addon",
+    "name": "My Custom Addon",
     "uuid": "43523f6f-b5b5-4ae9-9d25-f6bee95e68dd",
-    "version": [
-      0,
-      0,
-      2
-    ],
-    "min_engine_version": [
-      1,
-      2,
-      6
-    ]
+    "version": [0, 0, 2],
+    "min_engine_version": [1, 2, 6]
   },
   "modules": [
     {
-      "description": "01 Getting Started",
+      "description": "My Custom Addon",
       "type": "client_data",
       "uuid": "74c16d72-48ce-4775-98ae-93d84bdcf5cb",
-      "version": [
-        0,
-        0,
-        1
-      ]
+      "version": [0, 0, 1]
     }
   ]
 }
